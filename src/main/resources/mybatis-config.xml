@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+    <typeAliases>
+        <typeAlias type="java.util.HashMap" alias="m"/>
+        <typeAlias type="org.java.entity.UserBean" alias="User"/>
+        <typeAlias type="java.lang.Integer" alias="Integer"/>
+        <typeAlias type="org.java.entity.Brand" alias="Brand"/>
+        <typeAlias type="org.java.entity.Send_Order" alias="Send_Order"/>
+    </typeAliases>
+</configuration>

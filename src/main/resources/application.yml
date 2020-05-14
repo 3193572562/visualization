@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    suffix: .html
+    prefix: classpath:/templates/
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.96.19.26:3306/insurance?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  config-location: classpath:mybatis-config.xml
