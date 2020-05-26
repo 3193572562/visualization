@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Buttons</title>
+    <!-- Main Styles -->
+    <link rel="stylesheet" th:href="@{/assets/styles/style.min.css}">
+    <!-- Material Design Icon -->
+    <link rel="stylesheet" th:href="@{/assets/fonts/material-design/css/materialdesignicons.css}">
+    <!-- mCustomScrollbar -->
+    <link rel="stylesheet" th:href="@{/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css}">
+    <!-- Waves Effect -->
+    <link rel="stylesheet" th:href="@{/assets/plugin/waves/waves.min.css}">
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" th:href="@{/assets/plugin/sweet-alert/sweetalert.css}">
+    <!-- Dark Themes -->
+    <link rel="stylesheet" th:href="@{/assets/styles/style-black.min.css}">
+</head>
+
+<body>
+<div class="main-menu">
+    <header class="header">
+        <a href="index.html" class="logo">
+            <i class="ico mdi mdi-cube-outline">
+                <!--<img th:src="@{/visualization/images/favicon.ico}" class="logo" style="position: relative;bottom: 4px">-->
+            </i>
+            <!--骋安延保可视化管理系统-->
+            Visualization
+        </a>
+        <button type="button" class="button-close fa fa-times js__menu_close"></button>
+        <div class="user">
+            <a href="#" class="avatar">
+                <img th:src="@{/assets/images/avatar-sm-5.jpg}" alt="">
+                <span class="status online"></span>
+            </a>
+            <h5 class="name">
+                <a href="profile.html">刘洋</a>
+            </h5>
+            <h5 class="position">客服专员</h5>
+        </div>
+    </header>
+    <div class="content">
+        <div class="navigation">
+            <ul class="menu js__accordion">
+                <li class="current">
+                    <a class="waves-effect" th:href="@{/index}">
+                        <i class="menu-icon mdi mdi-view-dashboard"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu js__accordion">
+                <li>
+                    <a class="waves-effect parent-item js__control" href="#">
+                        <i class="menu-icon mdi mdi-pencil-box"></i>
+                        <span>出单管理</span>
+                        <span class="notice notice-blue">7</span>
+                    </a>
+                    <ul class="sub-menu js__content">
+                        <li><a th:href="@{/forword/Order_management/ui-buttons}">General Elements</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="waves-effect parent-item js__control" href="#">
+                        <i class="menu-icon mdi mdi-folder-multiple"></i>
+                        <span>理赔管理</span>
+                        <span class="menu-arrow fa fa-angle-down"></span>
+                    </a>
+                    <ul class="sub-menu js__content">
+                        <li><a href="extras-contact.html">Contact list</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="waves-effect parent-item js__control" href="#">
+                        <i class="menu-icon mdi mdi-table"></i>
+                        <span>基础信息</span>
+                        <span class="menu-arrow fa fa-angle-down"></span>
+                    </a>
+                    <ul class="sub-menu js__content">
+                        <li><a href="tables-basic.html">Basic Tables</a></li>
+                    </ul>
+                    <!-- /.sub-menu js__content -->
+                </li>
+                <li>
+                    <a class="waves-effect parent-item js__control" href="#">
+                        <i class="menu-icon mdi mdi-chart-areaspline"></i>
+                        <span>统计中心</span>
+                        <span class="menu-arrow fa fa-angle-down"></span>
+                    </a>
+                    <ul class="sub-menu js__content">
+                        <li><a href="chart-3d.html">3D Charts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="waves-effect parent-item js__control" href="#">
+                        <i class="menu-icon mdi mdi-cube-outline"></i>
+                        <span>系统设置</span>
+                        <span class="menu-arrow fa fa-angle-down"></span>
+                    </a>
+                    <ul class="sub-menu js__content">
+                        <li><a href="ui-notification.html">Notification</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="fixed-navbar">
+    <div class="pull-left">
+        <button type="button" class="menu-mobile-button glyphicon glyphicon-menu-hamburger js__menu_mobile"></button>
+        <h1 class="page-title">Buttons</h1>
+    </div>
+    <div class="pull-right">
+        <div class="ico-item">
+            <a href="#" class="ico-item mdi mdi-magnify js__toggle_open" data-target="#searchform-header"></a>
+            <form action="#" id="searchform-header" class="searchform js__toggle"><input type="search" placeholder="Search..." class="input-search"><button class="mdi mdi-magnify button-search" type="submit"></button></form>
+        </div>
+        <a href="#" class="ico-item mdi mdi-email notice-alarm js__toggle_open" data-target="#message-popup"></a>
+        <a href="#" class="ico-item pulse"><span class="ico-item mdi mdi-bell notice-alarm js__toggle_open" data-target="#notification-popup"></span></a>
+        <a href="#" class="ico-item mdi mdi-logout js__logout"></a>
+    </div>
+</div>
+<div id="wrapper">
+    <div class="main-content">
+        <div class="row small-spacing">
+            <div class="col-xs-12">
+                <div id="main1" class="layui-col-sm12" style="height: 300px;">11111</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>-->
+<!--<script type="text/javascript">-->
+
+    <!--var myChart = echarts.init(document.getElementById('main1'));-->
+
+    <!--option = {-->
+        <!--backgroundColor: '#1b1b1b',-->
+        <!--tooltip: {-->
+            <!--formatter: '{a} <br/>{c} {b}'-->
+        <!--},-->
+        <!--toolbox: {-->
+            <!--show: true,-->
+            <!--feature: {-->
+                <!--mark: {show: true},-->
+                <!--restore: {show: true},-->
+                <!--saveAsImage: {show: true}-->
+            <!--}-->
+        <!--},-->
+        <!--series: [-->
+            <!--{-->
+                <!--name: '速度',-->
+                <!--type: 'gauge',-->
+                <!--min: 0,-->
+                <!--max: 220,-->
+                <!--splitNumber: 11,-->
+                <!--radius: '50%',-->
+                <!--axisLine: {            // 坐标轴线-->
+                    <!--lineStyle: {       // 属性lineStyle控制线条样式-->
+                        <!--color: [[0.09, 'lime'], [0.82, '#1e90ff'], [1, '#ff4500']],-->
+                        <!--width: 3,-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--axisLabel: {            // 坐标轴小标记-->
+                    <!--fontWeight: 'bolder',-->
+                    <!--color: '#fff',-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 10-->
+                <!--},-->
+                <!--axisTick: {            // 坐标轴小标记-->
+                    <!--length: 15,        // 属性length控制线长-->
+                    <!--lineStyle: {       // 属性lineStyle控制线条样式-->
+                        <!--color: 'auto',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--splitLine: {           // 分隔线-->
+                    <!--length: 25,         // 属性length控制线长-->
+                    <!--lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式-->
+                        <!--width: 3,-->
+                        <!--color: '#fff',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--pointer: {           // 分隔线-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 5-->
+                <!--},-->
+                <!--title: {-->
+                    <!--textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE-->
+                        <!--fontWeight: 'bolder',-->
+                        <!--fontSize: 20,-->
+                        <!--fontStyle: 'italic',-->
+                        <!--color: '#fff',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--detail: {-->
+                    <!--backgroundColor: 'rgba(30,144,255,0.8)',-->
+                    <!--borderWidth: 1,-->
+                    <!--borderColor: '#fff',-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 5,-->
+                    <!--offsetCenter: [0, '50%'],       // x, y，单位px-->
+                    <!--textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE-->
+                        <!--fontWeight: 'bolder',-->
+                        <!--color: '#fff'-->
+                    <!--}-->
+                <!--},-->
+                <!--data: [{value: 40, name: 'km/h'}]-->
+            <!--},-->
+            <!--{-->
+                <!--name: '转速',-->
+                <!--type: 'gauge',-->
+                <!--center: ['25%', '55%'],    // 默认全局居中-->
+                <!--radius: '30%',-->
+                <!--min: 0,-->
+                <!--max: 7,-->
+                <!--endAngle: 45,-->
+                <!--splitNumber: 7,-->
+                <!--axisLine: {            // 坐标轴线-->
+                    <!--lineStyle: {       // 属性lineStyle控制线条样式-->
+                        <!--color: [[0.29, 'lime'], [0.86, '#1e90ff'], [1, '#ff4500']],-->
+                        <!--width: 2,-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--axisLabel: {            // 坐标轴小标记-->
+                    <!--fontWeight: 'bolder',-->
+                    <!--color: '#fff',-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 10-->
+                <!--},-->
+                <!--axisTick: {            // 坐标轴小标记-->
+                    <!--length: 12,        // 属性length控制线长-->
+                    <!--lineStyle: {       // 属性lineStyle控制线条样式-->
+                        <!--color: 'auto',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--splitLine: {           // 分隔线-->
+                    <!--length: 20,         // 属性length控制线长-->
+                    <!--lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式-->
+                        <!--width: 3,-->
+                        <!--color: '#fff',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--pointer: {-->
+                    <!--width: 5,-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 5-->
+                <!--},-->
+                <!--title: {-->
+                    <!--offsetCenter: [0, '-30%'],       // x, y，单位px-->
+                    <!--textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE-->
+                        <!--fontWeight: 'bolder',-->
+                        <!--fontStyle: 'italic',-->
+                        <!--color: '#fff',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--detail: {-->
+                    <!--//backgroundColor: 'rgba(30,144,255,0.8)',-->
+                    <!--// borderWidth: 1,-->
+                    <!--borderColor: '#fff',-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 5,-->
+                    <!--width: 80,-->
+                    <!--height: 30,-->
+                    <!--offsetCenter: [25, '20%'],       // x, y，单位px-->
+                    <!--textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE-->
+                        <!--fontWeight: 'bolder',-->
+                        <!--color: '#fff'-->
+                    <!--}-->
+                <!--},-->
+                <!--data: [{value: 1.5, name: 'x1000 r/min'}]-->
+            <!--},-->
+            <!--{-->
+                <!--name: '油表',-->
+                <!--type: 'gauge',-->
+                <!--center: ['75%', '50%'],    // 默认全局居中-->
+                <!--radius: '30%',-->
+                <!--min: 0,-->
+                <!--max: 2,-->
+                <!--startAngle: 135,-->
+                <!--endAngle: 45,-->
+                <!--splitNumber: 2,-->
+                <!--axisLine: {            // 坐标轴线-->
+                    <!--lineStyle: {       // 属性lineStyle控制线条样式-->
+                        <!--color: [[0.2, 'lime'], [0.8, '#1e90ff'], [1, '#ff4500']],-->
+                        <!--width: 2,-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--axisTick: {            // 坐标轴小标记-->
+                    <!--length: 12,        // 属性length控制线长-->
+                    <!--lineStyle: {       // 属性lineStyle控制线条样式-->
+                        <!--color: 'auto',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--axisLabel: {-->
+                    <!--fontWeight: 'bolder',-->
+                    <!--color: '#fff',-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 10,-->
+                    <!--formatter: function (v){-->
+                        <!--switch (v + '') {-->
+                            <!--case '0': return 'E';-->
+                            <!--case '1': return 'Gas';-->
+                            <!--case '2': return 'F';-->
+                        <!--}-->
+                    <!--}-->
+                <!--},-->
+                <!--splitLine: {           // 分隔线-->
+                    <!--length:15,         // 属性length控制线长-->
+                    <!--lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式-->
+                        <!--width:3,-->
+                        <!--color: '#fff',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--pointer: {-->
+                    <!--width:2,-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 5-->
+                <!--},-->
+                <!--title: {-->
+                    <!--show: false-->
+                <!--},-->
+                <!--detail: {-->
+                    <!--show: false-->
+                <!--},-->
+                <!--data: [{value: 0.5, name: 'gas'}]-->
+            <!--},-->
+            <!--{-->
+                <!--name: '水表',-->
+                <!--type: 'gauge',-->
+                <!--center: ['75%', '50%'],    // 默认全局居中-->
+                <!--radius: '30%',-->
+                <!--min: 0,-->
+                <!--max: 2,-->
+                <!--startAngle: 315,-->
+                <!--endAngle: 225,-->
+                <!--splitNumber: 2,-->
+                <!--axisLine: {            // 坐标轴线-->
+                    <!--lineStyle: {       // 属性lineStyle控制线条样式-->
+                        <!--color: [[0.2, 'lime'], [0.8, '#1e90ff'], [1, '#ff4500']],-->
+                        <!--width: 2,-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--axisTick: {            // 坐标轴小标记-->
+                    <!--show: false-->
+                <!--},-->
+                <!--axisLabel: {-->
+                    <!--fontWeight: 'bolder',-->
+                    <!--color: '#fff',-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 10,-->
+                    <!--formatter: function(v){-->
+                        <!--switch (v + '') {-->
+                            <!--case '0': return 'H';-->
+                            <!--case '1': return 'Water';-->
+                            <!--case '2': return 'C';-->
+                        <!--}-->
+                    <!--}-->
+                <!--},-->
+                <!--splitLine: {           // 分隔线-->
+                    <!--length: 15,         // 属性length控制线长-->
+                    <!--lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式-->
+                        <!--width: 3,-->
+                        <!--color: '#fff',-->
+                        <!--shadowColor: '#fff', //默认透明-->
+                        <!--shadowBlur: 10-->
+                    <!--}-->
+                <!--},-->
+                <!--pointer: {-->
+                    <!--width: 2,-->
+                    <!--shadowColor: '#fff', //默认透明-->
+                    <!--shadowBlur: 5-->
+                <!--},-->
+                <!--title: {-->
+                    <!--show: false-->
+                <!--},-->
+                <!--detail: {-->
+                    <!--show: false-->
+                <!--},-->
+                <!--data:[{value: 0.5, name: 'gas'}]-->
+            <!--}-->
+        <!--]-->
+    <!--};-->
+
+    <!--setInterval(function (){-->
+        <!--option.series[0].data[0].value = (Math.random()*100).toFixed(2) - 0;-->
+        <!--option.series[1].data[0].value = (Math.random()*7).toFixed(2) - 0;-->
+        <!--option.series[2].data[0].value = (Math.random()*2).toFixed(2) - 0;-->
+        <!--option.series[3].data[0].value = (Math.random()*2).toFixed(2) - 0;-->
+        <!--myChart.setOption(option);-->
+    <!--},2000);-->
+
+<!--</script>-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script th:src="@{/assets/script/html5shiv.min.js}"></script>
+<script th:src="@{/assets/script/respond.min.js}"></script>
+<![endif]-->
+<!--
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script th:src="@{/assets/scripts/jquery.min.js}"></script>
+<script th:src="@{/assets/scripts/modernizr.min.js}"></script>
+<script th:src="@{/assets/plugin/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js}"></script>
+<script th:src="@{/assets/plugin/nprogress/nprogress.js}"></script>
+<script th:src="@{/assets/plugin/sweet-alert/sweetalert.min.js}"></script>
+<script th:src="@{/assets/plugin/waves/waves.min.js}"></script>
+<script th:src="@{/assets/scripts/main.min.js}"></script>
+</body>
+</html>
