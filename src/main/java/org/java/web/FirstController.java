@@ -12,4 +12,9 @@ public class FirstController {
         return "index";
     }
 
+    @RequestMapping("index2")
+    public String index2(){
+        return "index2";
+    }
+
 }
